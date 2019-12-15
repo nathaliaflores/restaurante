@@ -1,0 +1,6 @@
+ejbs\AbstractFacade.class
+ejbs\UsuarioFacadeLocal.class
+controllers\UsuarioController.class
+ejbs\UsuarioFacade.class
+entities\Usuario_.class
+entities\Usuario.class
