@@ -15,6 +15,7 @@ public class UsuarioController implements Serializable{
     @EJB
     private UsuarioFacadeLocal usuarioEJB;
     private Usuario usuario;
+    private String mensaje;
 
     public UsuarioController() {
     }
@@ -31,10 +32,20 @@ public class UsuarioController implements Serializable{
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
+    }
     
     public void registrar(){
         try {
+            System.out.println("Entro en registrar!");
             usuarioEJB.create(usuario);
+            mensaje = "Registrado!";
         } catch (Exception e) {
         }
     }

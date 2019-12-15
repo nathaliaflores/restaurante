@@ -17,7 +17,8 @@
                             <p:inputText value="#{usuarioController.usuario.usuario}"/><br/>
                             <p:outputLabel value="Password:" /><br/>
                             <p:inputText value="#{usuarioController.usuario.password}"/><br/>
-                            <p:commandButton value="Registrar" action="#{usuarioController.registrar()}"/>
+                            <p:commandButton value="Registrar" action="#{usuarioController.registrar()}"/><br/>
+                            <p:outputLabel value="#{usuarioController.mensaje}" />
                         </h:form>
                     </div>
                     <div class="ui-g-4"></div>
