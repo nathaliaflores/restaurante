@@ -5,26 +5,38 @@
       xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>Restaurante</title>
+        <h:outputStylesheet  library="css" name="estilos.css" />
     </h:head>
-    <h:body>
-        <h:form>
-            <p:outputPanel>
-                <div class="ui-g">
-                    <div class="ui-g-4"></div>
-                    <div class="ui-g-4">
-                        <h:form>
-                            <p:outputLabel value="Usuario:" /><br/>
-                            <p:inputText value="#{usuarioController.usuario.usuario}"/><br/>
-                            <p:outputLabel value="Password:" /><br/>
-                            <p:inputText value="#{usuarioController.usuario.password}"/><br/>
-                            <p:commandButton value="Registrar" action="#{usuarioController.registrar}"/><br/>
-                            <p:outputLabel value="#{usuarioController.mensaje}" />
-                        </h:form>
-                    </div>
-                    <div class="ui-g-4"></div>
+    <h:body class="body-login">
+        <p:outputPanel>
+            <div class="ui-g centrar-texto">
+                <div class="ui-g-12 text-size-40">
+                    BONGUSTAIO
                 </div>
-            </p:outputPanel>
-        </h:form>
+            </div>
+            <div class="ui-g margin-top-100">
+                <div class="ui-g-4"></div>
+                <div class="ui-g-4">
+                    <h:form>
+                        <p:panelGrid columns="2" class="centrar-contenido">
+                            <p:outputLabel value="Usuario:" />
+                            <p:inputText value="#{usuarioController.usuario.usuario}"/>
+
+                            <p:outputLabel value="Password:" />
+                            <p:inputText value="#{usuarioController.usuario.password}"/>
+
+                            <h:column/>
+                            <p:commandButton icon="ui-icon-key" value="Login" action="#{usuarioController.iniciarSesion()}"/>
+                        </p:panelGrid>
+                    </h:form>
+                </div>
+                <div class="ui-g-4"></div>
+            </div>
+            <div class="ui-g  footer-login">
+                <div class="ui-g-12">
+                </div>
+            </div>
+        </p:outputPanel>
     </h:body>
 </html>
 

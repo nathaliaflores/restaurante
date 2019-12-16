@@ -41,13 +41,9 @@ public class UsuarioController implements Serializable{
         this.mensaje = mensaje;
     }
     
-    public void registrar(){
-        try {
-            System.out.println("Entro en registrar!");
-            usuarioEJB.create(usuario);
-            mensaje = "Registrado!";
-        } catch (Exception e) {
-        }
+    public String iniciarSesion(){
+        // Aqui iran los llamados Ejb para el login
+        return "modulos?faces-redirect=true";
     }
     
 }

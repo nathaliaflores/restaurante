@@ -1,0 +1,30 @@
+.body-login{
+    background-image: url(img/fondo-login.jpg);
+}
+
+.centrar-contenido{
+    margin: 0 auto;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.text-size-40{
+    font-size: 40px;
+}
+
+.text-size-20{
+    font-size: 20px;
+}
+
+.margin-top-100{
+    margin-top: 100px;
+}
+
+.navbar{
+    height: 50px;
+    background-color: yellow;
+}
+
+
