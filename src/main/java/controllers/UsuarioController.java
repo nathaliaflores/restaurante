@@ -46,4 +46,8 @@ public class UsuarioController implements Serializable{
         return "modulos?faces-redirect=true";
     }
     
+    public String cerrarSesion(){
+        return "index?faces-redirect=true";
+    }
+    
 }

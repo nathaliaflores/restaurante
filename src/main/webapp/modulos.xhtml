@@ -15,37 +15,21 @@
 
                 <p:menubar>
                     <p:submenu label="Mantenimientos" icon="pi pi-file">
-                        <p:submenu label="New" icon="pi pi-briefcase">
-                            <p:menuitem value="Project" url="#" />
-                            <p:menuitem value="Other" url="#" />
-                        </p:submenu>
-                        <p:menuitem value="Open" url="#" />
+                        <p:menuitem value="Proveedores" url="#" />
+                        <p:menuitem value="Sucursales" url="#" />
+                        <p:menuitem value="Productos" url="#" />
                         <p:separator />
-                        <p:menuitem value="Quit" url="#" />
+                        <p:menuitem value="Cerrar Sesion" url="#" />
                     </p:submenu>
 
-                    <p:submenu label="Ventas" icon="pi pi-pencil">
-                        <p:menuitem value="Undo" url="#" icon="pi pi-angle-double-left" />
-                        <p:menuitem value="Redo" url="#" icon="pi pi-angle-double-right" />
-                    </p:submenu>
-
-                    <p:submenu label="Inventario" icon="pi pi-question">
-                        <p:menuitem value="Contents" url="#" />
-                        <p:submenu label="Search" icon="pi pi-search">
-                            <p:submenu label="Text">
-                                <p:menuitem value="Workspace" url="#" />
-                            </p:submenu>
-                            <p:menuitem value="File" url="#" />
-                        </p:submenu>
-                    </p:submenu>
-
+                    <p:menuitem value="Ventas" url="#" icon="pi pi-times" />
+                    <p:menuitem value="Inventario" url="#" icon="pi pi-times" />
                     <f:facet name="options">
-                        <p:outputLabel value="Bienvenido"/> &nbsp;
-                        <p:commandButton type="button" value="Cerrar Sesion" icon="pi pi-home" />
+                        <p:outputLabel value="Bienvenido: nflores"/> &nbsp;
+                        <p:commandButton value="Cerrar Sesion" icon="pi pi-home" action="#{usuarioController.cerrarSesion()}"/>
                     </f:facet>
                 </p:menubar>
-            </h:form>
-            <h:form>
+
                 <div class="ui-g centrar-texto">
                     <div class="ui-g-4">
                         <p:panelGrid columns="1" class="centrar-contenido">
